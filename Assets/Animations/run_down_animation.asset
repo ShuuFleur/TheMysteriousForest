@@ -10,41 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02f1da0b6abdb7d45aa4315eccab639b, type: 3}
-  m_Name: Player_Move_Down
+  m_Name: run_down_animation
   m_EditorClassIdentifier: 
   cels:
   - sprite: {fileID: 1498727397, guid: 0517ab5515a4d734cab7d0445048a28d, type: 3}
     drivers:
-      keys:
-      - move
-      values: 01000000
+      keys: []
+      values: 
   - sprite: {fileID: -1276898253, guid: 0517ab5515a4d734cab7d0445048a28d, type: 3}
     drivers:
-      keys:
-      - move
-      values: 02000000
+      keys: []
+      values: 
   - sprite: {fileID: 517470086, guid: 0517ab5515a4d734cab7d0445048a28d, type: 3}
     drivers:
-      keys:
-      - move
-      values: 03000000
+      keys: []
+      values: 
   - sprite: {fileID: -941454934, guid: 0517ab5515a4d734cab7d0445048a28d, type: 3}
     drivers:
-      keys:
-      - move
-      values: 04000000
+      keys: []
+      values: 
   - sprite: {fileID: 1436755127, guid: 0517ab5515a4d734cab7d0445048a28d, type: 3}
     drivers:
-      keys:
-      - move
-      values: 05000000
+      keys: []
+      values: 
   - sprite: {fileID: -127317592, guid: 0517ab5515a4d734cab7d0445048a28d, type: 3}
     drivers:
-      keys:
-      - move
-      values: 06000000
+      keys: []
+      values: 
   controlDriver:
-    name: move
+    name: run
     autoIncrement: 1
     percentageBased: 0
     guid: 49300c7b-5858-42f2-a838-5b64cbc2b2c9
