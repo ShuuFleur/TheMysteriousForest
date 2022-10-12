@@ -15,12 +15,30 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Action",
+                    "name": "Sword",
                     "type": "Button",
                     "id": "e40a3761-abd8-4201-b85d-9f541ed57e2b",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Roll",
+                    "type": "Button",
+                    "id": "ef27bebe-fed3-4337-a502-fd6bc50461a1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "6b53ed3c-6dd8-4ec9-ad4b-562f68e4b9af",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press,Hold",
                     "initialStateCheck": false
                 }
             ],
@@ -93,12 +111,34 @@
                 },
                 {
                     "name": "",
-                    "id": "b9c2ed1e-be9a-4261-94b5-fd22a7422fd2",
+                    "id": "f459a8d3-c58a-4496-aa69-40adff825dc8",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sword",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3ceb7545-0199-47e2-8350-ffff649a8661",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Action",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f0288815-36b8-456d-a160-09dfdacdb42d",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
