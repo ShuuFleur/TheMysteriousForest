@@ -122,6 +122,17 @@
                 },
                 {
                     "name": "",
+                    "id": "a4a2633e-bf87-453c-b1cb-c81f49ba5e5f",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sword",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "3ceb7545-0199-47e2-8350-ffff649a8661",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -133,8 +144,30 @@
                 },
                 {
                     "name": "",
+                    "id": "0dd733b3-f35f-474e-b5cd-0568991aa925",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "f0288815-36b8-456d-a160-09dfdacdb42d",
                     "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "de0cad5b-89ff-4884-b0b1-da8e3775d2cc",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

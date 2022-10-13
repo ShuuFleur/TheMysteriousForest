@@ -462,7 +462,8 @@ MonoBehaviour:
   AttackCD:
     duration: 0.33
     cooldown: 0.33
-  actionReference: {fileID: 0}
+  actionShootReference: {fileID: 0}
+  projectile: {fileID: 1045607450373286754, guid: 0bd86029624ffe940bdaf744fc28d4b0, type: 3}
   rollSpeed: 2.4
 --- !u!114 &7743979054239412650
 MonoBehaviour:
