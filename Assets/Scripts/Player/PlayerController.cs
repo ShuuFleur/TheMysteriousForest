@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     private bool bcanAttack = true;
     private bool bcanMove = true;
     private bool bcanRoll = true;
+    private bool bcanRotate = true;
 
     private Animator _animator;
 
@@ -53,7 +54,9 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        switch (movementInput)
+        if (bcanRotate)
+        {
+            switch (movementInput)
             {
                 case Vector2 v when v.Equals(Vector2.up):
                     facingDirection = new Vector2(0, 1);
@@ -68,6 +71,7 @@ public class PlayerController : MonoBehaviour
                     facingDirection = new Vector2(1, 0);
                     break;
             }
+        }
 
         switch (state)
         {
@@ -115,9 +119,10 @@ public class PlayerController : MonoBehaviour
     {
 
         if (state != PlayerStates.Movement || !bcanAttack) return;
-        //AttackCD.Split();
+        AttackCD.Split();
         state = PlayerStates.Sword;
         bcanAttack = false;
+        bcanRotate = false;
 
     }
 
@@ -214,6 +219,7 @@ public class PlayerController : MonoBehaviour
     {
         bcanMove = true;
         bcanRoll = true;
+        bcanRotate = true;
         rb.velocity = Vector2.zero;
     }
 
@@ -234,7 +240,8 @@ public class PlayerController : MonoBehaviour
     public void ShootProjectile() 
     {
 
-        Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<ArrowController>().Setup(facingDirection);
+        Vector2 temp = new Vector2(_animator.GetFloat("X"), _animator.GetFloat("Y"));
+        Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<ArrowController>().Setup(facingDirection, ChooseArrowDirection());
 
     }
 

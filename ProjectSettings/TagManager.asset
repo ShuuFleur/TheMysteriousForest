@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Breakable
+  - Projectile Obstacle
+  - PlayerHitBox
+  - Block
   layers:
   - Default
   - TransparentFX
@@ -12,10 +15,10 @@ TagManager:
   - Lights
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - PlayerProjectile
+  - Player
+  - Block
+  - Wall
   - 
   - 
   - 
