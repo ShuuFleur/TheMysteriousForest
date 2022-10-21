@@ -9,6 +9,10 @@ public class SwordHit : MonoBehaviour
         if (other.CompareTag("Breakable"))
         {
             other.GetComponent<BreakableObject>().Hit();
+        } 
+        else if (other.CompareTag("Corruption"))
+        {
+            other.GetComponent<CorruptCoreController>().Hit();
         }
     }
 }

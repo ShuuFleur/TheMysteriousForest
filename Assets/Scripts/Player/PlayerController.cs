@@ -9,15 +9,11 @@ public class PlayerController : MonoBehaviour
 {
     #region Variables
     public float moveSpeed = 1.2f;
-    public float maxSpeed = 8f;
-    public ContactFilter2D movementFilter;
-    public float collisionsOffset = 0.05f;
 
     public PlayerStates state = PlayerStates.Movement;
 
     public Vector2 movementInput;
     Rigidbody2D rb;
-    List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     public Vector2 facingDirection = Vector2.down;
 
 
@@ -30,7 +26,6 @@ public class PlayerController : MonoBehaviour
     public float rollSpeed = 2.4f;
 
     public bool isMoving { get; private set; } = false;
-    public bool isAttacking { get; private set; } = false;
 
 
     private bool bcanAttack = true;
@@ -202,11 +197,6 @@ public class PlayerController : MonoBehaviour
 
 
     #endregion
-
-    void Test()
-    {
-        print("Oui");
-    }
 
     public void LockMovement()
     {

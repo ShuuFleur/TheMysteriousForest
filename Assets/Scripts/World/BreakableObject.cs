@@ -22,7 +22,8 @@ public class BreakableObject : MonoBehaviour
         print(hitForDestroy);
         if (hitForDestroy == 0)
         {
-            _animator.SetBool(animParameter, true);
+            if(_animator != null) _animator.SetBool(animParameter, true);
+            else DestroySelf();
         }
     }
 
