@@ -9,11 +9,13 @@ public class DoorController : MonoBehaviour
     private bool open;
     private Animator _animator;
     private Collider2D _collider;
+    private SpriteRenderer _spriteRenderer;
     
     private void Awake()
     {
         _animator = GetComponent<Animator>();
         _collider = GetComponent<Collider2D>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
     
     public void CheckCrystalsState()
@@ -82,10 +84,12 @@ public class DoorController : MonoBehaviour
             case true:
                 _animator.SetBool("Open", true);
                 _collider.enabled = false;
+                _spriteRenderer.sortingOrder = -1;
                 break;
             case false:
                 _animator.SetBool("Open", false);
                 _collider.enabled = true;
+                _spriteRenderer.sortingOrder = 0;
                 break;
         }
         print(open);

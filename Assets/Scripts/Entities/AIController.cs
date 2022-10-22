@@ -6,9 +6,9 @@ public class AIController : MonoBehaviour
 {
     public int baseHealth;
     public int baseAttack;
+    public float moveSpeed;
     public float chaseRadius;
     public float attackRadius;
-    public float distanceOffset;
     public Transform target;
     public Transform homePos;
 
@@ -29,6 +29,9 @@ public class AIController : MonoBehaviour
 
     void CheckDistance()
     {
-        if(Vector2.Distance(target.position, transform.position) <= chaseRadius) transform.position = Vector2.MoveTowards(transform.position, target.position, attackRadius);
+        if (Vector2.Distance(target.position, transform.position) <= chaseRadius && Vector2.Distance(target.position, transform.position) > attackRadius)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+        }
     }
 }

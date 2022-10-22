@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 1184209863, guid: 052ef9f363af22e43a53f31e5e72e3b8, type: 3}
+  m_Sprite: {fileID: -1763702685, guid: f8fed458890f2f0408442aef1c5d0335, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,9 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0859cdf2f8ccc3c4fb2643771b664a1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteDesactivate: {fileID: 1184209863, guid: 052ef9f363af22e43a53f31e5e72e3b8, type: 3}
-  spriteActivate: {fileID: 1708533497, guid: 052ef9f363af22e43a53f31e5e72e3b8, type: 3}
-  spriteToggleDesactivate: {fileID: 130461427, guid: ec7cb041ca2be654e9fb8d09587f8ffb, type: 3}
-  spriteToggleActivate: {fileID: -26288820, guid: ec7cb041ca2be654e9fb8d09587f8ffb, type: 3}
+  spriteDesactivate: {fileID: -1763702685, guid: f8fed458890f2f0408442aef1c5d0335, type: 3}
+  spriteActivate: {fileID: -1571097090, guid: f8fed458890f2f0408442aef1c5d0335, type: 3}
+  spriteToggleDesactivate: {fileID: 1636037210, guid: f8fed458890f2f0408442aef1c5d0335, type: 3}
+  spriteToggleActivate: {fileID: -1221030332, guid: f8fed458890f2f0408442aef1c5d0335, type: 3}
   assignedGameObject: {fileID: 0}
   isToggle: 0

@@ -41,8 +41,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ExternalEdge: 1.14
-    - _InternalEdge: 0.83
-    - _Speed: 3
+    - _ExternalEdge: 2.42
+    - _InternalEdge: 0
+    - _Speed: 1
     m_Colors: []
   m_BuildTextureStacks: []

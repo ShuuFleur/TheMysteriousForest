@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     #region Variables
     public float moveSpeed = 1.2f;
 
-    public PlayerStates state = PlayerStates.Movement;
+    public PlayerStates state = PlayerStates.Idle;
 
     public Vector2 movementInput;
     Rigidbody2D rb;
@@ -95,11 +95,11 @@ public class PlayerController : MonoBehaviour
         if (!bcanMove) return;
         bcanAttack = true;
         bcanRoll = true;
+        bcanRotate = true;
 
         if (movementInput != Vector2.zero)
         {
             movementInput.Normalize();
-
             rb.velocity = movementInput * moveSpeed;
 
         }
@@ -107,13 +107,14 @@ public class PlayerController : MonoBehaviour
         {
             isMoving = false;
             rb.velocity = Vector2.zero;
+            state = PlayerStates.Idle;
         }
     }
 
     void EnterAttackState()
     {
 
-        if (state != PlayerStates.Movement || !bcanAttack) return;
+        if (!bcanAttack) return;
         AttackCD.Split();
         state = PlayerStates.Sword;
         bcanAttack = false;
@@ -131,12 +132,14 @@ public class PlayerController : MonoBehaviour
 
     void EnterRollState()
     {
-        if (state != PlayerStates.Movement || !bcanRoll) return;
+        if (!bcanRoll) return;
+        
         state = PlayerStates.Roll;
         bcanRoll = false;
         bcanAttack = false;
+        bcanRotate = false;
+        
         _animator.SetTrigger("Rolling");
-        rollSpeed = 2.4f;
     }
 
     void UpdateRollState()
@@ -215,7 +218,6 @@ public class PlayerController : MonoBehaviour
 
     public void endRoll()
     {
-        rb.velocity = Vector2.zero;
         UnlockMovement();
         bcanAttack = true;
         state = PlayerStates.Movement;

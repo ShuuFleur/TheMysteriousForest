@@ -4,9 +4,10 @@ using UnityEngine;
 
 public enum PlayerStates
 {
-    Movement = 0,
-    Sword = 1,
-    Roll = 2,
-    Shoot = 3,
-    Hit = 4
+    Idle = 0,
+    Movement = 1,
+    Sword = 2,
+    Roll = 3,
+    Shoot = 4,
+    Hit = 5
 }

@@ -168,7 +168,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DoorClosing
-  m_Speed: 2
+  m_Speed: 1.8
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 8293308284264652848}
@@ -242,7 +242,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DoorOpening
-  m_Speed: 2
+  m_Speed: 1.8
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -8163101148637563703}

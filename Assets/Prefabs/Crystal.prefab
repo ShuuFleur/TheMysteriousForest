@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1540723698, guid: 767cf0d8d057a43479eab431f8605247, type: 3}
+  m_Sprite: {fileID: -1943163091, guid: f8fed458890f2f0408442aef1c5d0335, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -183,5 +183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf44359cac65d7d468a828fe0c9d7938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteDesactivate: {fileID: -1540723698, guid: 767cf0d8d057a43479eab431f8605247, type: 3}
-  spriteActivate: {fileID: 1880821822, guid: 767cf0d8d057a43479eab431f8605247, type: 3}
+  spriteDesactivate: {fileID: -1943163091, guid: f8fed458890f2f0408442aef1c5d0335, type: 3}
+  spriteActivate: {fileID: 1645498051, guid: f8fed458890f2f0408442aef1c5d0335, type: 3}
+  assignedGameObject: {fileID: 0}
