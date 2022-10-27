@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.aarthificial.reanimation": "https://github.com/aarthificial/reanimation.git",
     "com.unity.analytics": "3.8.1",
     "com.unity.cinemachine": "2.8.9",
     "com.unity.collab-proxy": "1.17.2",

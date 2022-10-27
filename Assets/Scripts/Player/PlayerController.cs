@@ -91,6 +91,12 @@ public class PlayerController : MonoBehaviour
 
     #region States
 
+    void EnterMovementState()
+    {
+        rb.velocity = Vector2.zero;
+        state = PlayerStates.Movement;
+    }
+
     void UpdateMovementState()
     {
         if (!bcanMove) return;
@@ -223,7 +229,7 @@ public class PlayerController : MonoBehaviour
     {
         UnlockMovement();
         bcanAttack = true;
-        state = PlayerStates.Movement;
+        EnterMovementState();
     }
 
     public void endAttack()
