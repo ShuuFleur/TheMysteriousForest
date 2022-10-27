@@ -105,9 +105,12 @@ public class PlayerController : MonoBehaviour
         bcanRoll = true;
         bcanRotate = true;
 
+        print(movementInput.magnitude);
+
         if (movementInput != Vector2.zero)
         {
             movementInput.Normalize();
+            rb.velocity = Vector2.zero;
             rb.velocity = movementInput * moveSpeed;
 
         }
@@ -152,7 +155,6 @@ public class PlayerController : MonoBehaviour
     void UpdateRollState()
     {
         rb.velocity = facingDirection * rollSpeed;
-        print(facingDirection);
     }
 
     void EnterShootState()
@@ -187,7 +189,7 @@ public class PlayerController : MonoBehaviour
     void OnMove(InputValue movementValue)
     {
         if(!bcanRoll) return;
-        state = PlayerStates.Movement;
+        EnterMovementState();
         movementInput = movementValue.Get<Vector2>();
     }
 
@@ -214,6 +216,7 @@ public class PlayerController : MonoBehaviour
     {
         bcanMove = false;
         bcanRoll = false;
+        movementInput = Vector2.zero;
         rb.velocity = Vector2.zero;
     }
     
@@ -236,7 +239,7 @@ public class PlayerController : MonoBehaviour
     {
         UnlockMovement();
         bcanAttack = true;
-        state = PlayerStates.Movement;
+        EnterMovementState();
     }
 
     Vector3 ChooseArrowDirection()

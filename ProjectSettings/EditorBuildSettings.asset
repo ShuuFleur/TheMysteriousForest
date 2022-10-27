@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/PlaygroundScene.unity
+    path: Assets/Scenes/Kevin_PlaygroundScene.unity
     guid: 55bc1096fba8ab04ab7b2b3ca019c97d
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b48847967278b4549ae1921c279ba028, type: 2}
