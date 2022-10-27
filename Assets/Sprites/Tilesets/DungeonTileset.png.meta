@@ -989,7 +989,7 @@ TextureImporter:
       name: DungeonTileset_42
       rect:
         serializedVersion: 2
-        x: 64
+        x: 96
         y: 0
         width: 32
         height: 32
@@ -1010,7 +1010,7 @@ TextureImporter:
       name: DungeonTileset_43
       rect:
         serializedVersion: 2
-        x: 96
+        x: 128
         y: 0
         width: 32
         height: 32
@@ -1031,7 +1031,7 @@ TextureImporter:
       name: DungeonTileset_44
       rect:
         serializedVersion: 2
-        x: 128
+        x: 160
         y: 0
         width: 32
         height: 32
@@ -1052,7 +1052,7 @@ TextureImporter:
       name: DungeonTileset_45
       rect:
         serializedVersion: 2
-        x: 160
+        x: 192
         y: 0
         width: 32
         height: 32
@@ -1073,7 +1073,7 @@ TextureImporter:
       name: DungeonTileset_46
       rect:
         serializedVersion: 2
-        x: 192
+        x: 224
         y: 0
         width: 32
         height: 32
@@ -1094,7 +1094,7 @@ TextureImporter:
       name: DungeonTileset_47
       rect:
         serializedVersion: 2
-        x: 224
+        x: 256
         y: 0
         width: 32
         height: 32
@@ -1107,27 +1107,6 @@ TextureImporter:
       bones: []
       spriteID: 8ca2b100732bfc244adf10f90dc1c358
       internalID: -1378901477
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DungeonTileset_48
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b54353e940a5b0d46882b8be0d40ff92
-      internalID: -1587151147
       vertices: []
       indices: 
       edges: []
@@ -1155,7 +1134,6 @@ TextureImporter:
       DungeonTileset_26: -1791759643
       DungeonTileset_21: -1829378987
       DungeonTileset_10: -792621938
-      DungeonTileset_48: -1587151147
       DungeonTileset_23: -1540762621
       DungeonTileset_44: -1335163562
       DungeonTileset_37: 1922336127

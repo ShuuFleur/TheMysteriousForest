@@ -20,13 +20,7 @@ public class PlayerController : MonoBehaviour
 
     public FixedStopwatch AttackCD = new FixedStopwatch();
     [SerializeField] private InputActionReference actionShootReference;
-    [SerializeField] private AudioClip[] Voices;
-    AudioClip lastClip;
-    [SerializeField] private AudioClip RollSound;
-    [SerializeField] private AudioClip StepSound;
-    [SerializeField] private AudioClip WooshSound;
-    [SerializeField] AudioSource voiceSource;
-    [SerializeField] AudioSource effectSource;
+    [SerializeField] private InputActionReference actionDodgeReference;
     public GameObject projectile;
 
 
@@ -118,7 +112,7 @@ public class PlayerController : MonoBehaviour
             movementInput.Normalize();
             rb.velocity = Vector2.zero;
             rb.velocity = movementInput * moveSpeed;
-            
+
         }
         else
         {
@@ -264,38 +258,13 @@ public class PlayerController : MonoBehaviour
 
     public void PlayEvadeSound()
     {
-        effectSource.volume = 0.1f;
-        effectSource.PlayOneShot(RollSound);
-        voiceSource.PlayOneShot(RandomClip());
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();
     }
 
     public void PlayStepSound()
     {
-        if(!effectSource.isPlaying) 
-        {
-            effectSource.volume = 0.1f;
-            effectSource.PlayOneShot(StepSound);
-        }
-    }
-
-    public void PlayWooshSound()
-    {
-        effectSource.volume = 0.1f;
-        effectSource.PlayOneShot(WooshSound);
-        voiceSource.PlayOneShot(RandomClip());
-    }
-
-    AudioClip RandomClip()
-    {
-        int attempts = 3;
-        AudioClip newClip = Voices[Random.Range(0, Voices.Length)];
-        while (newClip == lastClip && attempts > 0) 
-        {
-        newClip = Voices[Random.Range(0, Voices.Length)];
-        attempts--;
-        }
-        lastClip = newClip;
-        return newClip;
+        
     }
 
 }
