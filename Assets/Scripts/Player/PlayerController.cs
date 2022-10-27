@@ -256,4 +256,15 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void PlayEvadeSound()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();
+    }
+
+    public void PlayStepSound()
+    {
+        
+    }
+
 }
