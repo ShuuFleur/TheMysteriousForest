@@ -9,6 +9,7 @@ TagManager:
   - PlayerHitBox
   - Block
   - Corruption
+  - Enemy
   layers:
   - Default
   - TransparentFX

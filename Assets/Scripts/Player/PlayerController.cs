@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     public FixedStopwatch AttackCD = new FixedStopwatch();
     [SerializeField] private InputActionReference actionShootReference;
+    [SerializeField] private InputActionReference actionDodgeReference;
     public GameObject projectile;
 
 
@@ -93,6 +94,7 @@ public class PlayerController : MonoBehaviour
     void UpdateMovementState()
     {
         if (!bcanMove) return;
+        
         bcanAttack = true;
         bcanRoll = true;
         bcanRotate = true;
@@ -127,7 +129,6 @@ public class PlayerController : MonoBehaviour
         
         _animator.SetTrigger("Attacking");
         state = PlayerStates.Movement;
-
     }
 
     void EnterRollState()
@@ -145,6 +146,7 @@ public class PlayerController : MonoBehaviour
     void UpdateRollState()
     {
         rb.velocity = facingDirection * rollSpeed;
+        print(facingDirection);
     }
 
     void EnterShootState()
@@ -178,6 +180,7 @@ public class PlayerController : MonoBehaviour
 
     void OnMove(InputValue movementValue)
     {
+        if(!bcanRoll) return;
         state = PlayerStates.Movement;
         movementInput = movementValue.Get<Vector2>();
     }
@@ -217,6 +220,13 @@ public class PlayerController : MonoBehaviour
     }
 
     public void endRoll()
+    {
+        UnlockMovement();
+        bcanAttack = true;
+        state = PlayerStates.Movement;
+    }
+
+    public void endAttack()
     {
         UnlockMovement();
         bcanAttack = true;

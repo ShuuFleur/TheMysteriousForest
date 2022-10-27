@@ -12,8 +12,6 @@ public class AIController : MonoBehaviour
     public Transform target;
     public Transform homePos;
 
-    
-
 
     // Start is called before the first frame update
     void Start()
