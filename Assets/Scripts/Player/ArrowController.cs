@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class ArrowController : MonoBehaviour
 {
+    [SerializeField] private AudioClip hitSound;    
+    
     private Rigidbody2D rb;
     private Collider2D c;
     private Animator animator;
+    private AudioSource audioSource;
 
     private float speed = 2;
     private bool isMoving = true;
@@ -19,6 +22,7 @@ public class ArrowController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         c = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void Setup(Vector2 velocity, Vector3 direction)
@@ -49,6 +53,7 @@ public class ArrowController : MonoBehaviour
             transform.position = transform.position + (Vector3)stickPos;
             DisableCollision();
             animator.SetTrigger("Obstacled");
+            audioSource.PlayOneShot(hitSound);
             Destroy(this.gameObject, 2);
         }
         else Destroy(this.gameObject);

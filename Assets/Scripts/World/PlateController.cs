@@ -9,7 +9,9 @@ public class PlateController : MonoBehaviour
     [SerializeField] private Sprite spriteToggleDesactivate;
     [SerializeField] private Sprite spriteToggleActivate;
     [SerializeField] private GameObject assignedGameObject;
+    
     private SpriteRenderer _spriteRenderer;
+    private AudioSource audioSource;
 
     public bool isActivate { get; private set; } = false;
     [SerializeField] private bool isToggle = false;
@@ -17,6 +19,7 @@ public class PlateController : MonoBehaviour
     private void Awake()
     {
         _spriteRenderer = GetComponentInParent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
         if(isToggle) _spriteRenderer.sprite = spriteToggleDesactivate;
     }
 
@@ -29,6 +32,7 @@ public class PlateController : MonoBehaviour
             {
                 case true:
                     _spriteRenderer.sprite = spriteActivate;
+                    audioSource.Play();
                     break;
                 case false:
                     _spriteRenderer.sprite = spriteDesactivate;
@@ -41,6 +45,7 @@ public class PlateController : MonoBehaviour
             {
                 case true:
                     _spriteRenderer.sprite = spriteToggleActivate;
+                    audioSource.Play();
                     break;
                 case false:
                     _spriteRenderer.sprite = spriteToggleDesactivate;

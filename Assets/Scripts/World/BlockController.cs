@@ -6,6 +6,7 @@ using UnityEngine;
 public class BlockController : MonoBehaviour
 {
     private Rigidbody2D _rb;
+    private AudioSource _audioSource;
     private float time = 1f;
     private float elaspedTime;
     private Vector2 direction = Vector2.zero;
@@ -16,6 +17,7 @@ public class BlockController : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -26,8 +28,12 @@ public class BlockController : MonoBehaviour
         
         elaspedTime += Time.deltaTime;
         _rb.position = Vector2.Lerp(lastPos, lastPos+(direction*0.16f), elaspedTime/time);
-        
-        if (elaspedTime >= time) isMoving = false;
+
+        if (elaspedTime >= time)
+        {
+            isMoving = false;
+            _audioSource.Stop();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -45,7 +51,7 @@ public class BlockController : MonoBehaviour
             if(ray.collider != null) return;
             isMoving = true;
             
-            
+            _audioSource.Play();
         }
     }
 

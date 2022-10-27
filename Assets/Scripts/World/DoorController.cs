@@ -5,17 +5,21 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
+    [SerializeField] private AudioClip[] sounds;
+    
     [SerializeField] private List<GameObject> listCrystals = new List<GameObject>();
     private bool open;
     private Animator _animator;
     private Collider2D _collider;
     private SpriteRenderer _spriteRenderer;
+    private AudioSource _audioSource;
     
     private void Awake()
     {
         _animator = GetComponent<Animator>();
         _collider = GetComponent<Collider2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _audioSource = GetComponent<AudioSource>();
     }
     
     public void CheckCrystalsState()
@@ -85,11 +89,13 @@ public class DoorController : MonoBehaviour
                 _animator.SetBool("Open", true);
                 _collider.enabled = false;
                 _spriteRenderer.sortingOrder = -1;
+                _audioSource.PlayOneShot(sounds[0]);
                 break;
             case false:
                 _animator.SetBool("Open", false);
                 _collider.enabled = true;
                 _spriteRenderer.sortingOrder = 0;
+                _audioSource.PlayOneShot(sounds[1]);
                 break;
         }
         print(open);

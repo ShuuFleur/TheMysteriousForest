@@ -16,17 +16,18 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     public Vector2 facingDirection = Vector2.down;
 
-
-
     public FixedStopwatch AttackCD = new FixedStopwatch();
     [SerializeField] private InputActionReference actionShootReference;
+    
     [SerializeField] private AudioClip[] Voices;
+    [SerializeField] private AudioClip[] StepSound;
     AudioClip lastClip;
     [SerializeField] private AudioClip RollSound;
-    [SerializeField] private AudioClip StepSound;
+    [SerializeField] private AudioClip BowPull;
     [SerializeField] private AudioClip WooshSound;
     [SerializeField] AudioSource voiceSource;
     [SerializeField] AudioSource effectSource;
+    
     public GameObject projectile;
 
 
@@ -118,7 +119,7 @@ public class PlayerController : MonoBehaviour
             movementInput.Normalize();
             rb.velocity = Vector2.zero;
             rb.velocity = movementInput * moveSpeed;
-            
+            PlayStepSound();
         }
         else
         {
@@ -167,7 +168,8 @@ public class PlayerController : MonoBehaviour
     {
         
         state = PlayerStates.Shoot;
-
+        
+        
     }
 
     void UpdateShootState()
@@ -266,7 +268,7 @@ public class PlayerController : MonoBehaviour
     {
         effectSource.volume = 0.1f;
         effectSource.PlayOneShot(RollSound);
-        voiceSource.PlayOneShot(RandomClip());
+        voiceSource.PlayOneShot(RandomClip(Voices));
     }
 
     public void PlayStepSound()
@@ -274,7 +276,7 @@ public class PlayerController : MonoBehaviour
         if(!effectSource.isPlaying) 
         {
             effectSource.volume = 0.1f;
-            effectSource.PlayOneShot(StepSound);
+            effectSource.PlayOneShot(RandomClip(StepSound));
         }
     }
 
@@ -282,16 +284,22 @@ public class PlayerController : MonoBehaviour
     {
         effectSource.volume = 0.1f;
         effectSource.PlayOneShot(WooshSound);
-        voiceSource.PlayOneShot(RandomClip());
+        voiceSource.PlayOneShot(RandomClip(Voices));
+    }
+    
+    public void PlayPullSound()
+    {
+        effectSource.volume = 0.1f;
+        effectSource.PlayOneShot(BowPull);
     }
 
-    AudioClip RandomClip()
+    AudioClip RandomClip(AudioClip[] clips)
     {
         int attempts = 3;
-        AudioClip newClip = Voices[Random.Range(0, Voices.Length)];
+        AudioClip newClip = clips[Random.Range(0, clips.Length)];
         while (newClip == lastClip && attempts > 0) 
         {
-        newClip = Voices[Random.Range(0, Voices.Length)];
+        newClip = clips[Random.Range(0, clips.Length)];
         attempts--;
         }
         lastClip = newClip;
