@@ -55,8 +55,10 @@ public class ArrowController : MonoBehaviour
             animator.SetTrigger("Obstacled");
             audioSource.PlayOneShot(hitSound);
             Destroy(this.gameObject, 2);
+        } else {
+            Destroy(this.gameObject);
+            c.enabled = true;
         }
-        else Destroy(this.gameObject);
 
     }
 
