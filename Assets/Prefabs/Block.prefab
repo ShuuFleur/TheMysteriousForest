@@ -208,7 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1536
 --- !u!82 &7961265658183650876
 AudioSource:
   m_ObjectHideFlags: 0

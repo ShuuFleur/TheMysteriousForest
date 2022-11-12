@@ -57,7 +57,6 @@ public class ArrowController : MonoBehaviour
             Destroy(this.gameObject, 2);
         } else {
             Destroy(this.gameObject);
-            c.enabled = true;
         }
 
     }
