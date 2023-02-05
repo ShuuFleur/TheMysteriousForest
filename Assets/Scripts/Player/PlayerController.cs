@@ -1,6 +1,7 @@
 using System.Collections;
 using Common;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
@@ -137,7 +138,8 @@ public class PlayerController : MonoBehaviour
         state = PlayerStates.Sword;
         bcanAttack = false;
         bcanRotate = false;
-
+        
+        
     }
 
     void UpdateSwordState()
@@ -194,22 +196,43 @@ public class PlayerController : MonoBehaviour
 
     #region Events
 
-    void OnMove(InputValue movementValue)
+    public void OnMove(InputAction.CallbackContext context)
     {
         if(!bcanRoll) return;
         EnterMovementState();
-        movementInput = movementValue.Get<Vector2>();
+        movementInput = context.ReadValue<Vector2>();
     }
 
-    void OnSword()
+    public void OnSword(InputAction.CallbackContext context)
     {
         //if (!AttackCD.IsReady) return;
         EnterAttackState();
     }
 
-    void OnRoll()
+    public void OnRoll(InputAction.CallbackContext context)
     {
-        EnterRollState();
+        
+        context.action.performed += input =>
+        {
+            if (input.interaction is TapInteraction)
+            {
+                EnterRollState();
+            }
+            
+            if (input.interaction is HoldInteraction)
+            {
+                EnterRollState();
+            }
+            
+        };
+        
+        context.action.canceled += input =>
+        {
+            print("Roll End");
+            endRoll();
+        };
+        
+        
     }
 
     void OnShoot()

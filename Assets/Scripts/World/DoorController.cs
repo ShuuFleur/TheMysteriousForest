@@ -8,11 +8,12 @@ public class DoorController : MonoBehaviour
     [SerializeField] private AudioClip[] sounds;
     
     [SerializeField] private List<GameObject> listCrystals = new List<GameObject>();
-    private bool open;
+    private bool bOpen;
     private Animator _animator;
     private Collider2D _collider;
     private SpriteRenderer _spriteRenderer;
     private AudioSource _audioSource;
+    private GameObject _camera;
     
     private void Awake()
     {
@@ -20,6 +21,7 @@ public class DoorController : MonoBehaviour
         _collider = GetComponent<Collider2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _audioSource = GetComponent<AudioSource>();
+        _camera = transform.GetChild(0).gameObject;
     }
     
     public void CheckCrystalsState()
@@ -82,22 +84,32 @@ public class DoorController : MonoBehaviour
     
     void SwitchState(bool state)
     {
-        open = state;
-        switch (open)
+        bOpen = state;
+        switch (bOpen)
         {
             case true:
                 _animator.SetBool("Open", true);
                 _collider.enabled = false;
                 _spriteRenderer.sortingOrder = -1;
                 _audioSource.PlayOneShot(sounds[0]);
+                // StartCoroutine(delayDoorCam());
                 break;
             case false:
                 _animator.SetBool("Open", false);
                 _collider.enabled = true;
                 _spriteRenderer.sortingOrder = 0;
                 _audioSource.PlayOneShot(sounds[1]);
+                // StartCoroutine(delayDoorCam());
                 break;
         }
-        print(open);
+        print(bOpen);
     }
+    //
+    // private IEnumerator delayDoorCam()
+    // {
+    //     _camera.SetActive(true);
+    //     yield return new WaitForSeconds(1f);
+    //     _camera.SetActive(false);
+    //     StopCoroutine(delayDoorCam());
+    // }
 }

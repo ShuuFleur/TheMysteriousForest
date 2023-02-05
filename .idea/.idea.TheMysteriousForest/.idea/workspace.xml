@@ -2,91 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4569a23e-914f-4803-b9a0-b3cfebc33c04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_AdultLink_Attack1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_AdultLink_Attack1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_AdultLink_Attack2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_AdultLink_Attack2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_AdultLink_Attack3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_AdultLink_Attack3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_AdultLink_Attack4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_AdultLink_Attack4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_AdultLink_Push1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_AdultLink_Push1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_AdultLink_Push2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_AdultLink_Push2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Arrow_Hit.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Arrow_Hit.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Arrow_Shoot.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Arrow_Shoot.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Boulder_Loop 1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Boulder_Loop 1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Boulder_Loop.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Boulder_Loop.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Bow_Pull.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Bow_Pull.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Bush_Cut.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Bush_Cut.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_CrystalSwitch3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_CrystalSwitch3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_CrystalSwitch_Off.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_CrystalSwitch_Off.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Door_Stone_Close.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Door_Stone_Close.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Door_Stone_Open.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Door_Stone_Open.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Link_Roll.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Link_Roll.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Dirt1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Dirt1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Dirt2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Dirt2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Dirt3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Dirt3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Stone1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Stone1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Stone2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Stone2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Stone3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Stone3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Stone4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Steps_Stone4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Switch.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Switch.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Sword1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Media/OOT_Sword1.wav.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TheMysteriousForest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheMysteriousForest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/BowStartDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/BowStartDown.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/BowStartLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/BowStartLeft.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/BowStartRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/BowStartRight.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/BowStartUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/BowStartUp.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/MC_Link_Roll.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/MC_Link_Roll.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/MC_Link_Run.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/MC_Link_Run.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/MC_Link_Sword.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/MC_Link_Sword.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/MC_Link_Sword1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/MC_Link_Sword1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/MC_Link_Sword2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/MC_Link_Sword2.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/MC_Link_Sword3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/MC_Link_Sword3.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/Sound.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Media/Sound.mixer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Block.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Block.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Crystal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Crystal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/RollDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/RollDown.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/RollLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/RollLeft.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/RollRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/RollRight.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/RollUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/RollUp.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/World/DoorClosing.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/World/DoorClosing.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/World/DoorOpening.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/World/DoorOpening.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Plate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Plate.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dungeon_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dungeon_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/ArrowController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/ArrowController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Forest_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Forest_Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/BlockController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/BlockController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/CrystalController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/CrystalController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputActions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputActions.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/DoorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/DoorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/World/PlateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/World/PlateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +24,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/World/DoorController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.1/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -130,7 +57,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\2021.2.3f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\2021.3.13f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\shuui\Documents\GitHub\TheMysteriousForest -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\shuui\Documents\GitHub\TheMysteriousForest" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -175,6 +102,11 @@
       <workItem from="1666617590947" duration="651000" />
       <workItem from="1666707843498" duration="5704000" />
       <workItem from="1666894553911" duration="2021000" />
+      <workItem from="1668353403131" duration="1472000" />
+      <workItem from="1668498165363" duration="31000" />
+      <workItem from="1668529383988" duration="269000" />
+      <workItem from="1668542577236" duration="2771000" />
+      <workItem from="1675347723676" duration="50000" />
     </task>
     <servers />
   </component>
